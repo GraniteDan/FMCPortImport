@@ -16,9 +16,10 @@ Version: 1.0
 
 This Script Relies on a number of Python Libraries (fireREST, csv, ansicolors)
 ################################################################################################
+
 """
 
-
+print(yellow(h1))
 filename = 'protoports.csv'
 Groups=[]
 CSVData=[]
@@ -27,7 +28,7 @@ user = input("Enter FMC Username:")
 pwd = getpass()
 fmc = FMC(hostname=ip, username=user, password=pwd, domain='Global')
 pwd = None
-print(yellow(h1))
+
 
 with open(filename, 'r') as csvfile:
     # creating a csv reader object
