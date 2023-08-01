@@ -1,5 +1,5 @@
 from fireREST import FMC
-import csv, json, netaddr
+import csv, json
 from colors import red, green, blue, yellow
 from getpass import getpass
 
