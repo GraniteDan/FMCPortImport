@@ -1,55 +1,61 @@
 from fireREST import FMC
-import csv
+import csv, json
 from colors import red, green, blue, yellow
-h1 = """################################################################################################
+from getpass import getpass
 
-Common Application Port Object Import Tool for Cisco FMC API
+h1 = """
+################################################################################################
+
+Common Application Port Object Removal Tool for Cisco FMC API
 
 !!! ENSURE API ACCESS IS ENABLED IN THE FMC @: SYSTEM > CONFIGURATION > REST API PREFERENCES !!!
 
-Author: Dan Parr / dparr@granite-it.net
+Author: Dan Parr
 Created: July 29 2023
+Version: 1.0
 
 This Script Relies on a number of Python Libraries (fireREST, csv, ansicolors)
 ################################################################################################
 """
-print(green(h1))
+
 
 filename = 'protoports.csv'
+Groups=[]
+CSVData=[]
+ip = input("Enter your FMC Management IP/Hostname:")
+user = input("Enter FMC Username:")
+pwd = getpass()
+fmc = FMC(hostname=ip, username=user, password=pwd, domain='Global')
+pwd = None
+print(yellow(h1))
 
-#fields = []
-#rows = []
 with open(filename, 'r') as csvfile:
     # creating a csv reader object
     csvreader = csv.DictReader(csvfile)
      
-    # extracting field names through first row
-    #fields = next(csvreader)
- 
-    # extracting each data row one by one
-    #for row in csvreader:
-    #    rows.append(row)
-
-    # get total number of rows
-    #print(yellow("Importing %d Named Protocol Port Definitions into FirePower Management Console"%(csvreader.line_num)))
-   # print(csvreader.count)
-    #print (csvreader.len)
-# printing the field names
-#print('Field names are:' + ', '.join(field for field in fields))
-
-    fmc = FMC(hostname='10.11.35.9', username='apiuser', password='T1ckBit3!', domain='Global')
     for row in csvreader:
-        print(row['name'])
-        pport_obj = {
-        'name':row['name'],
-        'port':row['port'],
-        'protocol':row['protocol']
-    }
+        CSVData.append(row)
+        grps=row['groups'].split('/')
+        grps=row['groups'].split('/')
+        for g in grps:
+            if (g) and (g not in Groups):
+                print(yellow("Adding " + g + " To list of groups to remove"))
+                Groups.append(g)
+               
+
+    for group in Groups:
+        print(green("Deleting: " + group))
+        try:
+            fmc.object.portobjectgroup.delete(name=group)
+        except Exception as e: print(red(e))
+    
+    
+    for row in CSVData:
+
+        print("Removing Port Object: " + row['name'])
+        
         try:
             fmc.object.protocolportobject.delete(name=row['name'])
-            #X = fmc.object.protocolportobject.get(name=row['name'])
-            #fmc.object.protocolportobject.delete()
-            
-           # print(X)
+           
         except Exception as e: print(red(e))
-
+        
