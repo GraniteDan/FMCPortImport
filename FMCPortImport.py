@@ -64,7 +64,7 @@ with open(filename, 'r') as csvfile:
         #print(row['name'])
         #Create ProtocolPortObject if one of the same name doesn't already exist
         if not GetPortObject(row['name']):
-            print(green("Port Object: " + row['name'] + " Not defined, Creating new Protocol Port Object"))
+            print("Creating New Port Object: " + row['name'] + " (" + row['protocol'] + "/" + row['port'] + ")")
             pport_obj = {
                 'name':row['name'],
                 'port':row['port'],
@@ -118,7 +118,7 @@ for g in Groups:
                     del stripport['metadata']
                     del stripport['links']
                     if not search_dictionaries('id', stripport['id'], grpobj['objects']):
-                        print(green("Adding PortObject: " + portobj['name'] + " to PortObjectGroup: " + g))
+                        print("Adding PortObject: " + portobj['name'] + " to PortObjectGroup: " + g)
                         grpobj['objects'].append(stripport)
         fmc.object.portobjectgroup.create(data=grpobj)
 
