@@ -27,7 +27,8 @@ def search_dictionaries(key, value, list_of_dictionaries):
 
 
 ## Variable Definitions ##
-h1 = """################################################################################################
+h1 = """
+################################################################################################
 
 Common Application Port Object Import Tool for Cisco FMC API
 
