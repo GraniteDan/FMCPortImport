@@ -1,0 +1,200 @@
+[
+  {
+    "metadata": {
+      "timestamp": 1690925774834,
+      "lastUser": {
+        "name": "apiuser"
+      },
+      "domain": {
+        "name": "Global",
+        "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+        "type": "Domain"
+      },
+      "parentType": "Port"
+    },
+    "links": {
+      "self": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/portobjectgroups/00000000-0000-0ed3-0000-008589938360",
+      "parent": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ports"
+    },
+    "type": "PortObjectGroup",
+    "objects": [
+      {
+        "type": "ProtocolPortObject",
+        "port": "445",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938108",
+        "name": "MS_SMB"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "138",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938126",
+        "name": "MS_NETBIOS_DATAGRAM"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "137",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938144",
+        "name": "MS_NETBIOS_NAME"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "139",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938162",
+        "name": "MS_NETBIOS_SESSION"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "88",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938180",
+        "name": "ADDS_KERBEROS"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "464",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938198",
+        "name": "ADDS_KERBEROS_PASSWD"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "389",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938216",
+        "name": "ADDS_LDAP"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "636",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938234",
+        "name": "ADDS_LDAPS"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "3268-3269",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938252",
+        "name": "ADDS_GLOBAL_CATALOG"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "135",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938270",
+        "name": "MS_RPC_TCP"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "135",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938288",
+        "name": "MS_RPC_UDP"
+      }
+    ],
+    "overridable": false,
+    "id": "00000000-0000-0ed3-0000-008589938360",
+    "name": "AD"
+  },
+  {
+    "metadata": {
+      "timestamp": 1690925775546,
+      "lastUser": {
+        "name": "apiuser"
+      },
+      "domain": {
+        "name": "Global",
+        "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+        "type": "Domain"
+      },
+      "parentType": "Port"
+    },
+    "links": {
+      "self": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/portobjectgroups/00000000-0000-0ed3-0000-008589938378",
+      "parent": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ports"
+    },
+    "type": "PortObjectGroup",
+    "objects": [
+      {
+        "type": "ProtocolPortObject",
+        "port": "445",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938108",
+        "name": "MS_SMB"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "138",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938126",
+        "name": "MS_NETBIOS_DATAGRAM"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "137",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938144",
+        "name": "MS_NETBIOS_NAME"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "139",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938162",
+        "name": "MS_NETBIOS_SESSION"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "135",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938270",
+        "name": "MS_RPC_TCP"
+      },
+      {
+        "type": "ProtocolPortObject",
+        "port": "135",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938288",
+        "name": "MS_RPC_UDP"
+      }
+    ],
+    "overridable": false,
+    "id": "00000000-0000-0ed3-0000-008589938378",
+    "name": "FileAndPrint"
+  },
+  {
+    "metadata": {
+      "timestamp": 1690925776091,
+      "lastUser": {
+        "name": "apiuser"
+      },
+      "domain": {
+        "name": "Global",
+        "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+        "type": "Domain"
+      },
+      "parentType": "Port"
+    },
+    "links": {
+      "self": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/portobjectgroups/00000000-0000-0ed3-0000-008589938396",
+      "parent": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ports"
+    },
+    "type": "PortObjectGroup",
+    "objects": [
+      {
+        "type": "ProtocolPortObject",
+        "port": "666",
+        "overridable": false,
+        "id": "00000000-0000-0ed3-0000-008589938342",
+        "name": "DOOM"
+      }
+    ],
+    "overridable": false,
+    "id": "00000000-0000-0ed3-0000-008589938396",
+    "name": "GAMING"
+  }
+]

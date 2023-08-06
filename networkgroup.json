@@ -1,0 +1,74 @@
+[
+  {
+    "links": {
+      "self": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networkgroups/69fa2a3a-4487-4e3c-816f-4098f684826e"
+    },
+    "type": "NetworkGroup",
+    "literals": [
+      {
+        "type": "Network",
+        "value": "0.0.0.0/0"
+      },
+      {
+        "type": "Network",
+        "value": "::/0"
+      }
+    ],
+    "overridable": false,
+    "id": "69fa2a3a-4487-4e3c-816f-4098f684826e",
+    "name": "any",
+    "metadata": {
+      "readOnly": {
+        "state": true,
+        "reason": "SYSTEM"
+      },
+      "timestamp": 1690144612987,
+      "lastUser": {
+        "name": "apiuser"
+      },
+      "domain": {
+        "name": "Global",
+        "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+        "type": "Domain"
+      }
+    }
+  },
+  {
+    "links": {
+      "self": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networkgroups/15b12b14-dace-4117-b9d9-a9a7dcfa356f"
+    },
+    "type": "NetworkGroup",
+    "literals": [
+      {
+        "type": "Network",
+        "value": "10.0.0.0/8"
+      },
+      {
+        "type": "Network",
+        "value": "172.16.0.0/12"
+      },
+      {
+        "type": "Network",
+        "value": "192.168.0.0/16"
+      }
+    ],
+    "overridable": false,
+    "id": "15b12b14-dace-4117-b9d9-a9a7dcfa356f",
+    "name": "IPv4-Private-All-RFC1918",
+    "metadata": {
+      "readOnly": {
+        "state": true,
+        "reason": "SYSTEM"
+      },
+      "timestamp": 1690144612984,
+      "lastUser": {
+        "name": "apiuser"
+      },
+      "domain": {
+        "name": "Global",
+        "id": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+        "type": "Domain"
+      }
+    }
+  }
+]

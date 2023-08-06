@@ -1,0 +1,54 @@
+[
+  {
+    "metadata": {
+      "section": "Mandatory",
+      "startIndex": 1,
+      "endIndex": 1,
+      "position": 0,
+      "accessPolicy": {
+        "type": "AccessPolicy",
+        "defaultAction": {
+          "enableSyslog": false,
+          "logBegin": false,
+          "logEnd": false,
+          "sendEventsToFMC": false,
+          "type": "AccessPolicyDefaultAction"
+        },
+        "name": "LabPolicy",
+        "id": "00000000-0000-0ed3-0000-004294968140"
+      }
+    },
+    "links": {
+      "self": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/00000000-0000-0ed3-0000-004294968140/categories/00000000-0000-0ed3-0000-000268435456"
+    },
+    "type": "Category",
+    "id": "00000000-0000-0ed3-0000-000268435456",
+    "name": "Big Daddy Category"
+  },
+  {
+    "metadata": {
+      "section": "Mandatory",
+      "startIndex": 2,
+      "endIndex": 2,
+      "position": 1,
+      "accessPolicy": {
+        "type": "AccessPolicy",
+        "defaultAction": {
+          "enableSyslog": false,
+          "logBegin": false,
+          "logEnd": false,
+          "sendEventsToFMC": false,
+          "type": "AccessPolicyDefaultAction"
+        },
+        "name": "LabPolicy",
+        "id": "00000000-0000-0ed3-0000-004294968140"
+      }
+    },
+    "links": {
+      "self": "https://10.11.35.9/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/policy/accesspolicies/00000000-0000-0ed3-0000-004294968140/categories/00000000-0000-0ed3-0000-000268435458"
+    },
+    "type": "Category",
+    "id": "00000000-0000-0ed3-0000-000268435458",
+    "name": "SCUD Missile defense system"
+  }
+]

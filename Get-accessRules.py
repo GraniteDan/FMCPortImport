@@ -6,7 +6,7 @@ from getpass import getpass
 h1 = """
 ################################################################################################
 
-Common Application Port Object Removal Tool for Cisco FMC API
+Access Policy Rule/Category Extraction Tool for Cisco FMC API
 
 !!! ENSURE API ACCESS IS ENABLED IN THE FMC @: SYSTEM > CONFIGURATION > REST API PREFERENCES !!!
 
@@ -23,14 +23,13 @@ print(yellow(h1))
 filename = 'protoports.csv'
 Groups=[]
 CSVData=[]
-"""
+
 ip = input("Enter your FMC Management IP/Hostname:")
 user = input("Enter FMC Username:")
 pwd = getpass()
 fmc = FMC(hostname=ip, username=user, password=pwd, domain='Global')
 pwd = None
- """
-fmc = FMC(hostname='10.11.35.9', username='apiuser', password="T1ckBit3!", domain='Global')
+
 
 #fn = input("Please enter a file name to save json to:")
 polname = input('Please Enter the Access Policy Name:')

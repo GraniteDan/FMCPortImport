@@ -23,14 +23,13 @@ print(yellow(h1))
 filename = 'protoports.csv'
 Groups=[]
 CSVData=[]
-"""
+
 ip = input("Enter your FMC Management IP/Hostname:")
 user = input("Enter FMC Username:")
 pwd = getpass()
 fmc = FMC(hostname=ip, username=user, password=pwd, domain='Global')
 pwd = None
- """
-fmc = FMC(hostname='10.11.35.9', username='apiuser', password="T1ckBit3!", domain='Global')
+
 
 #fn = input("Please enter a file name to save json to:")
 objdata = ['fqdn','icmpv4object','interface','interfacegroup','network','networkaddress','networkgroup','policylist','portobjectgroup','protocolportobject','range','securitygrouptag','securityzone']
